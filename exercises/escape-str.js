@@ -8,7 +8,8 @@
  */
 
 // Your code:
-const escapeStr = String.raw${`/\`"'`},
+const escapeStr = String.raw`/\`"'`;
+
 //* Begin of tests
 const assert = require("assert");
 

@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
  * Create a `yell` function that takes a string
@@ -7,9 +7,15 @@
  */
 
 // Your code:
-
+function yell(input) {
+  return input.toUpperCase();
+}
 //* Begin of tests
-const assert = require('assert');
+const assert = require("assert");
 
-assert.fail('You must write your own tests');
+// Check that capitalizeFirst is a function
+assert.strictEqual(typeof yell, "function");
+assert.strictEqual(yell.length, 1);
+assert.strictEqual(yell("hello"), "HELLO");
+assert.strictEqual(yell("b"), "B");
 // End of tests */
